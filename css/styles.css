@@ -9,9 +9,12 @@ body {
   width: 1600px;
   background: #e5e5e5;
 }
-
+header {
+  width: 1600px;
+  height: 80px;
+}
 nav {
-  width: 100%;
+  width: auto;
   border: 1px solid #ffffff;
   height: 80px;
   background: #ffffff;
@@ -19,6 +22,7 @@ nav {
 }
 
 .logotype {
+  display: block;
   position: absolute;
   left: 215px;
   top: 25px;
@@ -26,7 +30,7 @@ nav {
   width: 145px;
   height: 31px;
 }
-.logotype a {
+.logotype {
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
@@ -36,7 +40,7 @@ nav {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.logotype a span {
+.logotype span {
   color: black;
   font-family: Raleway;
   font-style: normal;
@@ -66,10 +70,10 @@ nav .menu {
   margin-right: 331px;
 }
 
-nav .feedback {
+header .feedback {
   display: flex;
   position: absolute;
-  right: 215px;
+  left: 1078px;
   top: 32px;
   size: 14px;
   line-height: 16, 41px;
@@ -80,11 +84,13 @@ nav .feedback {
   margin-right: 50px;
 }
 
-ul > li {
+ul > li,
+.feedback > li {
   list-style: none;
 }
 
-ul li a {
+ul li a,
+.feedback li a {
   display: block;
   text-decoration: none;
   color: #212121;
@@ -120,6 +126,7 @@ ul li a:hover {
 }
 
 .main_link {
+  display: block;
   position: absolute;
   margin-top: 0px;
   width: 200px;
@@ -129,10 +136,6 @@ ul li a:hover {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.main_link a {
-  display: block;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
@@ -140,6 +143,7 @@ ul li a:hover {
   line-height: 30px;
   color: #ffffff;
   padding: 10px 33px;
+  letter-spacing: 0.06em;
 }
 
 .main_inf {
@@ -286,14 +290,6 @@ footer {
 }
 
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  top: 60px;
-  margin-bottom: 20px;
-  left: 215px;
-}
-.logo a {
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
@@ -302,6 +298,12 @@ footer {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  top: 60px;
+  margin-bottom: 20px;
+  left: 215px;
 }
 .logo span {
   color: white;
@@ -312,12 +314,30 @@ footer {
   line-height: 31px;
   letter-spacing: 0.03em;
 }
-
-footer ul {
-  list-style: none;
+footer p {
   position: absolute;
   top: 111px;
+  margin-bottom: 9px;
   left: 215px;
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+
+footer ul {
+  position: absolute;
+  top: 141px;
+  left: 215px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -326,7 +346,5 @@ footer ul {
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-footer ul > li:first-child {
-  color: #fff;
+  text-decoration: none;
 }
