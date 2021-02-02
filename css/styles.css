@@ -12,6 +12,7 @@ body {
 header {
   width: 1600px;
   height: 80px;
+  margin: 0 auto;
 }
 nav {
   width: auto;
@@ -96,7 +97,7 @@ ul li a,
   color: #212121;
 }
 
-ul li a:hover {
+ul li a:hover, ul li a:focus {
   color: #2196f3;
 }
 
@@ -108,7 +109,7 @@ ul li a:hover {
   background: #2f303a;
 }
 
-.t_head {
+.t-head {
   position: absolute;
   width: 696px;
   height: 120px;
@@ -125,7 +126,7 @@ ul li a:hover {
   color: #ffffff;
 }
 
-.main_link {
+.main-link {
   display: block;
   position: absolute;
   margin-top: 0px;
@@ -146,11 +147,11 @@ ul li a:hover {
   letter-spacing: 0.06em;
 }
 
-.main_inf {
+.main-inf {
   margin: 94px 215px;
   position: relative;
 }
-.main_inf h2 {
+.main-inf h2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -199,7 +200,7 @@ ul li a:hover {
   color: #757575;
 }
 
-.t_photo {
+.t-photo {
   margin: 0 0 50px 612px;
   font-family: Roboto;
   font-style: normal;
@@ -229,7 +230,7 @@ ul li a:hover {
   height: 648px;
 }
 
-.t_team {
+.t-team {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -241,13 +242,13 @@ ul li a:hover {
   padding-top: 94px;
 }
 
-.our_team {
+.our-team {
   display: flex;
   flex-direction: row;
   margin: 50px 215px 94px 215px;
 }
 
-.team_photos {
+.team-photos {
   width: 270px;
   height: 368px;
   margin-right: 30px;
@@ -257,7 +258,7 @@ ul li a:hover {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team_photos .name + p {
+.team-photos .name + p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -329,15 +330,15 @@ footer p {
   letter-spacing: 0.03em;
 }
 
-footer ul {
+footer .footer-links {
   position: absolute;
   top: 141px;
   left: 215px;
 }
-footer ul li {
+.footer-links li {
   list-style: none;
 }
-footer ul li a {
+.footer-links a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
